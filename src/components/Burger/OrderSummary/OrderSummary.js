@@ -8,7 +8,7 @@ const OrderSummary = (props)=> {
         <p>detail order:</p>
         <ul>
             {Object.keys(props.ingredients).map((ing)=> {
-                return (<li>{ing} : {props.ingredients[ing]} </li>);
+                return (<li key={ing} style={{textTransform:'capitalize'}}>{ing} : {props.ingredients[ing]} </li>);
             })}
         </ul>
     </Aux>);

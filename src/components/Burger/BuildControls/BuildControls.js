@@ -24,7 +24,7 @@ const buildControls = (props) => {
                     />
                 );
             })}
-            <button className={styles.OrderButton}>Order Now</button>
+            <button className={styles.OrderButton} onClick={props.showHideSummary}>Order Now</button>
         </div>
 
     );
